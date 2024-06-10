@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ <h1>Job application form</h1>
+ <h3>Please fill out the form below to submit your Job application</h3>
+ <div class="form-container">
+    <form id="survey-form">
+        <label for="fname">First Name:<br></label>
+        <input type="text" class="input-text" id="fname" name="fname" style="margin-bottom: 20px; " size="40" placeholder="Enter Your First Name" required autocomplete="on"><br>
+
+        <label for="sname" id="sname" >Last Name:<br></label>
+        <input type="text" class="input-text" id="fname" name="second-name" style="margin-bottom: 20px;" size="40" placeholder="Enter Your Last Name" required autocomplete="on"><br>
+
+        <label for="dob" id="dob">Date Of Birth:<br></label>
+        <input type="date" id="dob" name="dob" style="margin-bottom: 20px" required autocomplete="on"><br>
+
+        <label for="email" id="email">Email ID:</label><br></label>
+        <input type="email" id="email" class="input-text" name="email" style="margin-bottom: 20px" size="40" placeholder="abcd@gmail.com" required autocomplete="on"><br>
+
+        <label for="mob-no" id="mob-no">Mobile Number:<br></label>
+        <input type="tel" id="mob-no" name="mob-no" style="margin-bottom: 20px" placeholder="e.g 9591335566" required autocomplete="on"><br>
+
+        <label for="edu" id="edu">Education:<br></label>
+        <input type="radio" id="12th" name="edu" value="12th" required>
+        <label for="12th">12th<br></label>
+        <input type="radio" id="Undergraduate" name="edu" value="Undergraduate" required>
+        <label for="Undergraduate">Undergraduate<br></label>
+        <input type="radio" id="Postgraduate" name="edu" value="Postgraduate" required>
+        <label for="Postgraduate">Postgraduate<br></label>
+        <input type="radio" id="PHD" name="edu" value="PHD" style="margin-bottom: 20px" required>
+        <label for="PHD"  >PHD<br></label>
+
+        <label for="exp" id="exp">Experience(in number of years)<br></label>
+        <select id="Experience" name="experience" style="margin-bottom: 20px" required autocomplete="on"> 
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="5+">5+</option>
+            <option value="10+">10+</option>
+            <option value="15+">15+</option>
+            <option value="20+">20+</option>
+
+        </select><br>
+
+        <label for="pos" id="pos">Applied Position:<br></label>
+        <input type="text" class="input-text" id="pos" name="pos" style="margin-bottom: 20px" size="40" placeholder="Enter the Position you wish to apply for" required autocomplete="on"><br>
+
+        <label for="interview-date" id="interview-date">Preferred Interview Date:<br></label>
+        <input type="date" id="interview-date" name="interview-date" style="margin-bottom: 20px;" required autocomplete="on"><br>
+
+        <label for="interview-time" id="interview-time">Preferred Interview Time<br></label>
+        <select id="Experience" name="experience" style="margin-bottom: 20px" required autocomplete="on">
+            <option value="10:00AM">10:00 AM</option>
+            <option value="10:30AM">10:30 AM</option>
+            <option value="11:00AM">11:00 AM</option>
+            <option value="11:30AM">11:30 AM</option>
+            <option value="12:00 Noon">12:00 noon</option>
+            <option value="12:30 PM">12:30 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+        </select><br>
+        
+
+        <label for="start-date" id="start-date">Earliest Possible Start Date:<br></label>
+        <input type="date" id="Start Date" name="Start-date" style="margin-bottom: 20px" required autocomplete="on"><br>
+        
+        <label for="cover-letter" id="cover-letter">Cover Letter(Please do not exceed 200 words)<br></label>
+        <textarea name="cover-letter" rows="10" cols="40" style="margin-bottom: 20px" required autocomplete="on"></textarea><br>
+
+        <label for="resume" id="resume">Please upload your resume below:<br></label>
+        <input type="file" id="Start Date" name="files[]" multiple style="margin-bottom: 20px" required><br>
+
+        <input type="submit" id="submit-button" value="Submit">
+
+
+           
+        
+
+
+
+
+   
+
+
+
+
+    </form>
+</div>    
+</body>
+</html>
